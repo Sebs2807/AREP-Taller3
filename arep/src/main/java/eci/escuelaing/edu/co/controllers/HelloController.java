@@ -6,7 +6,7 @@ import eci.escuelaing.edu.co.annotations.*;
 public class HelloController {
 
     @GetMapping("/hola")
-    public String greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
+    public String saludo(@RequestParam(value = "name", defaultValue = "World") String name) {
         return "Hola " + name;
     }
 }
