@@ -51,9 +51,17 @@ Pasos para ejecutar el servidor en tu entorno local:
 
 4. Ejecutar el servidor
 
-    mvn exec:java
+    Hay 2 formas de correr el proyecto, la primera es para correr solamente el servidor web y el framework para crear aplicaciones pequeñas
 
-    java -cp target/classes eci.escuelaing.edu.co.MicroSpringBoot eci.escuelaing.edu.co.controllers.HelloController
+    ```bash
+    mvn exec:java
+    ```
+
+    Este otro corre el microSpringBoot
+
+    ```bash
+    java -cp target/classes eci.escuelaing.edu.co.MicroSpringBoot
+    ```
 
 El servidor quedará corriendo en el puerto **36000**
 

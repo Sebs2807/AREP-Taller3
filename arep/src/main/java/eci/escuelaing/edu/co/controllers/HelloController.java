@@ -6,7 +6,12 @@ import eci.escuelaing.edu.co.annotations.*;
 public class HelloController {
 
     @GetMapping("/hola")
-    public String saludo(@RequestParam(value = "name", defaultValue = "World") String name) {
+    public String saludo(@RequestParam(value = "name", defaultValue = "mundo") String name) {
         return "Hola " + name;
+    }
+
+    @GetMapping("/greetings")
+    public String index() {
+        return "Greetings from Spring Boot!";
     }
 }
