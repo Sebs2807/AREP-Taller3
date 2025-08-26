@@ -42,7 +42,8 @@ public class MicroSpringBoot {
                 }
             }
         }
-
+        
         HttpServer.main(new String[]{});
+        HttpServer.staticfiles("");
     }
 }
